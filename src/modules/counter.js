@@ -10,7 +10,7 @@ export const decrease = () => ({ type: DECREASE });
 
 // 초기 상태
 const initialState = {
-  numbe: 0,
+  number: 0,
 };
 
 // 리듀서 함수 만들기
@@ -19,7 +19,7 @@ export default function counter(state = initialState, action) {
     case INCREASE:
       return { number: state.number + 1 };
     case DECREASE:
-      return { numbe: state.number - 1 };
+      return { number: state.number - 1 };
     default:
       return state;
   }
